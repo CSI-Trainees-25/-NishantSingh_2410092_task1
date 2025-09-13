@@ -1,0 +1,297 @@
+
+
+* {
+     padding: 0;
+     margin: 0;
+     /* overflow-x: hidden; */
+ }
+
+ .all nav {
+     color: white;
+ }
+
+ .all {
+
+     background-image: url("https://rare-gallery.com/mocahbig/467979-nature-landscape-mountains-sky-clouds-rocks-trees.jpg");
+     height: 95vh;
+     background-attachment: fixed;  /*  study */
+     width: 100%;
+     background-size: cover;
+     background-position: center;
+     background-repeat: no-repeat;
+     animation: change 10s infinite linear(1 71.18%, 1 100%) 2s;
+     /* opacity: .89; */
+    /* overflow-x: hidden; */
+ }
+
+ .list ol {
+     display: flex;
+     align-items: center;
+     justify-content: space-evenly;
+     padding: 23px;
+ }
+
+ .list ol li {
+     list-style: none;
+     font-family: cursive;
+     padding: 10px 20px;
+     font-size: large;
+ }
+
+ .list ol li a {
+     text-decoration: none;
+
+ }
+
+
+ a:link {
+     color: aliceblue;
+ }
+
+ a:visited {
+     color: white;
+ }
+
+ .list ol li a:hover {
+     color: aqua;
+     font-weight: 900;
+     transform: scale();
+     /*  abhi yanha hover to translate to 1.5 x time vala */
+ }
+
+ .lg {
+
+     border: 3px solid white;
+     border-radius: 24px;
+     padding: 17px;
+     font-family: cursive;
+     transition: all 0.3s ease-in-out;
+
+ }
+
+ .lg a {
+     text-decoration: none;
+ }
+
+ header nav {
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+ }
+
+ .logo {
+     font-family: cursive;
+     font-weight: bold;
+     font-size: xx-large;
+     transition: all 0.8s ease-in-out;
+ }
+
+ .logo:hover {
+     transform: rotate(360deg);
+     color: aqua;
+ }
+
+ .lg:hover {
+     transform: scale(1.1);
+     background-color: rgb(49, 211, 211);
+ }
+
+ @keyframes change {
+     33% {
+         background-image: url("https://rare-gallery.com/mocahbig/467979-nature-landscape-mountains-sky-clouds-rocks-trees.jpg");
+     }
+
+     66% {
+         background-image: url("https://capturelandscapes.com/wp-content/uploads/2020/12/Video1-1920.jpg");
+     }
+
+     100% {
+         background-image: url("https://capturelandscapes.com/wp-content/uploads/2017/03/Ruins-od-Despair-e1489009070315.jpg");
+     }
+ }
+
+
+
+ .hero {
+     color: white;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+
+ section .one,
+ .second {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     gap: 2.5rem;
+     height: 75vh;
+     /* overflow-x: hidden; */
+     /* background: linear-gradient(to right, rgb(108, 102, 102), rgb(85, 238, 172), rgb(79, 79, 85)); */
+ }
+
+ section .cont {
+
+     width: 100%;
+     background-color: gray;
+ }
+ .cof{
+    /* border: 2px solid rgb(73, 69, 69); */
+    border: none;
+     box-shadow: 0 0 50px 55px rgb(75, 46, 46);
+    overflow-x: hidden;
+    }
+ .theory{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 4vh;
+    padding-top: 3vh;
+    h2{
+        font-size: xx-large;
+        font-family: cursive;
+    }
+    h1{
+        font-size: xx-large;
+        font-weight: bolder;
+        font-family: cursive;
+    }
+ }
+
+
+ .box {
+     height: 60vh;
+     width: 24vw;
+     gap: 3vw;
+     background: rgba(255, 255, 255, 0.1);
+     backdrop-filter: blur(10px);
+     border-radius: 15px;
+     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+     transition: transform 0.4s ease-in-out;
+      background-color: aliceblue;
+      
+ }
+
+ .box:hover {
+     transform: scale(1.1);
+   
+    /* border-image: linear-gradient(red blue white yellow);  */
+ }
+
+ .box img{
+    height:55%;
+    width: 100%;
+      background-size: cover;
+     background-position: center;
+     background-repeat: no-repeat;
+     border-radius: 15px;
+    
+
+ }
+.box .loc{
+    padding:10px 0px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    font-family: cursive;
+    font-size: large;
+    font-weight: bolder;
+}
+.boxall{
+    margin: 0 1.7vw;
+    
+    .th{
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      padding-bottom: 10px;
+    }
+    .star{
+        padding-bottom: 10px;
+    }
+    
+    .sing {
+        background-color: rgb(239, 88, 33);
+        border-radius: 3px;
+        height: 40px;
+         width: 7vw;
+         display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 3px solid rgb(92, 71, 71);
+    
+    }
+    .sing a{
+        font-weight: bold;
+        font-family: cursive;
+        text-decoration: none;
+    }
+
+}
+.sing:hover{
+    background-color: rgb(220, 51, 51);
+    transform: scale(1.09);
+    /* overflow-y: hidden; */
+}
+.newsection{
+    height: 75vh;
+    
+    background-color: gray;
+    border: 1px solid rgb(38, 41, 38);
+
+}
+
+.contan{
+         display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width:100%;
+}
+
+.dabba2 img{
+    height: 40vh;
+}
+.dabba1{
+    width: 60%;
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    font-family: cursive;
+  
+}
+
+.dabba1 .thry p{
+        font-family: monospace;
+        text-indent: -13px;
+    }
+ .st1 img{
+    height: 55px;
+ border: 4px solid rgb(10, 10, 84);
+ border-radius: 8px;
+}
+.st1{
+      display: flex;
+    justify-content: space-around;
+    gap: 23px;
+    
+  
+}
+.st1 .c{
+    
+  
+    .p{
+        font-size: medium;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+}
+ .c h3{
+        color: rgb(35, 33, 33);
+        font-size: x-large;
+        font-weight: bolder;
+        
+    }
+
+.contan {
+  column-gap: 40px;
+}
