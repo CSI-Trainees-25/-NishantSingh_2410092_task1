@@ -116,11 +116,21 @@
      display: flex;
      justify-content: center;
      align-items: center;
+     flex-direction: column;
+      width: 100%;
+     text-transform: capitalize;
  }
+ .hero .o,.tw,.th{
+    font-family: cursive;
+    font-weight: bold;
+    
+ }
+
  .why{
          height: 50vh;
      width: 100%;
     background-color: white;
+
  }
 
 .t{
