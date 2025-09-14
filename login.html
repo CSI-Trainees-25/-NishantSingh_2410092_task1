@@ -58,6 +58,28 @@
             font-weight: bold;
             font-family: cursive;
         }
+        button{
+               display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: orangered;
+    border: 2px solid snow;
+    border-radius: 8px;
+  height: 6.8vh;
+    width: 9vw;
+    color: white;
+    font-size: larger;
+    font-family: cursive;
+    margin-bottom: 12px;
+        }
+       
+        button:hover{
+           transform: scale(1.09);
+        }
+        .singup{
+            font-family: cursive;
+            font-size: larger;
+        }
     </style>
 </head>
 
@@ -68,6 +90,9 @@
             <input type="text" placeholder="Username" required>
             <input type="password" placeholder="Password" required>
             <button>Login</button>
+             <div class="signup">
+        Don’t have an account? <a href="#">Sign Up</a>
+      </div>
         </div>
     </div>
 </body>
