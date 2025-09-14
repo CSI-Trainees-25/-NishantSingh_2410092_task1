@@ -286,6 +286,9 @@
     /* border: 21px solid rgb(38, 41, 38); */
 
 }
+.boxone img{
+     filter:drop-shadow(4px 15px 18px rgb(77, 172, 204));
+}
 
 .contan{
          display: flex;
@@ -293,9 +296,15 @@
     align-items: center;
     width:100%;
 }
+.vidborder{
+    border-radius: 12px;
+    height: 52vh;
+}
 
-.dabba2 img{
-    height: 40vh;
+.dabba2 video{
+    
+    border-radius: 10px;
+    height: 100%;
     filter:drop-shadow(4px 15px 18px rgb(77, 172, 204));
 }
 .dabba1{

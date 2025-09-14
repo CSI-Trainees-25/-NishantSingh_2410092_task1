@@ -7,14 +7,14 @@
   <style>
     body {
       font-family: Arial, sans-serif;
-      background: linear-gradient(135deg, #6dd5ed, #2193b0);
+      background: linear-gradient(135deg,blue, skyblue);
       margin: 0;
       padding: 40px;
     }
     .schedule-container {
       max-width: 500px;
       margin: auto;
-      background: #ffffff;
+      background: whitesmoke;
       padding: 30px;
       border-radius: 18px;
       box-shadow: 0 8px 25px rgba(0,0,0,0.15);
@@ -27,13 +27,13 @@
     h2 {
       text-align: center;
       margin-bottom: 25px;
-      color: #1b4965;
+      color: rgb(10, 119, 134);
     }
     label {
       display: block;
       margin: 12px 0 6px;
       font-weight: bold;
-      color: #333;
+      color:rgb(45, 41, 41);
     }
     input[type="text"], 
     input[type="date"], 
@@ -41,14 +41,14 @@
     input[type="number"] {
       width: 100%;
       padding: 12px;
-      border: 2px solid #cce3f0;
+      border: 2px solid whitesmoke;
       border-radius: 10px;
       margin-bottom: 18px;
       font-size: 14px;
       transition: border 0.3s, box-shadow 0.3s;
     }
     input:focus {
-      border: 2px solid #2193b0;
+      border: 2px solid rgb(26, 160, 197);
       outline: none;
       box-shadow: 0 0 8px rgba(33,147,176,0.4);
     }
@@ -56,8 +56,8 @@
       display: block;
       width: 100%;
       padding: 14px;
-      background: linear-gradient(to right, #2193b0, #6dd5ed);
-      color: white;
+      background: linear-gradient(to right,blue,skyblue);
+      color: rgb(184, 170, 170);
       font-weight: bold;
       border: none;
       border-radius: 10px;
@@ -67,7 +67,10 @@
     }
     .btn:hover {
       transform: scale(1.05);
-      box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+      box-shadow: 0 6px 18px rgba(12, 12, 12, 0.2);
+    }
+    button a{
+   text-decoration: none;
     }
   </style>
 </head>
@@ -75,7 +78,7 @@
 
   <div class="schedule-container">
     <h2>📅 Schedule Your Journey</h2>
-    <form action="thankyou.html" method="post">
+    <form action="index.html" method="post">
       
       <label for="name">Traveler Name</label>
       <input type="text" id="name" name="name" placeholder="Enter your full name" required>
@@ -95,8 +98,8 @@
       <label for="travellers">Number of Travelers</label>
       <input type="number" id="travellers" name="travellers" min="1" placeholder="e.g. 2" required>
 
-      <button type="submit" class="btn">🚀 Schedule Now</button>
-    </form>
+      
+   <button type="submit" class="btn">🚀 Schedule Now</button> </form>
   </div>
 
 </body>
