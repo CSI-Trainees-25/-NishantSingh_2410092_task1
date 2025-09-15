@@ -55,7 +55,6 @@
      color: aqua;
      font-weight: 900;
      transform: scale();
-     /*  abhi yanha hover to translate to 1.5 x time vala */
  }
 
  .lg {
@@ -147,6 +146,7 @@
     font-weight: bolder;
  }
  .setting{
+    margin-top: 5vh;
     position: absolute;
     background-color: rgb(90, 116, 139);
     width: 100%;
@@ -233,9 +233,8 @@
      align-items: center;
      gap: 2.5rem;
      height: 75vh;
-     /* overflow-x: hidden; */
-     /* background: linear-gradient(to right, rgb(108, 102, 102), rgb(85, 238, 172), rgb(79, 79, 85)); */
- }
+
+    }
 
  section .cont {
 
@@ -282,8 +281,6 @@
 
  .box:hover {
      transform: scale(1.1);
-   
-    /* border-image: linear-gradient(red blue white yellow);  */
  }
 
  .box img{

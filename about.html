@@ -1,92 +1,294 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us - Travel Gallery</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f9f9f9;
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{
+        padding: 0;
+        margin: 0
+    }
+    .conatainer {
+      height: auto;
+      width: 70vw;
+      margin: auto;
+      background-color: rgb(189, 208, 208);
+      border-radius: 10px;
+      padding: 20px;
+    }
+    .conatainer h1 {
+      font-size: 3.7rem;
+    }
+    .conatainer p {
+      font-size: 1.2em;
+    }
+    .conatainer .gallery {
+      display: grid;
+      grid-template-columns: repeat(3,22vw); 
+      gap: 20px;
+      justify-items: center;
+    }
+    .conatainer .gallery img {
+      height: 250px;
+      width: 100%;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+    .conatainer .gallery img:nth-last-child(2),
+    .conatainer .gallery img:nth-last-child(1) {
+      grid-column: span 1;
+    }
+    .tour-blog {
+      margin-top: 30px;
+    }
+    .tourblog h2 {
+      margin-bottom: 10px;
+    }
+ .blog {
+    height: 74vh;
+  margin: 15px auto;
+  margin-left: 6vw;
+  display: grid;
+  grid-template-columns: 40vw 48vw;
+}
 
-        .about-section {
-            max-width: 1200px;
-            margin: 50px auto;
-            padding: 30px;
-            background-color: #fff;
-            border-radius: 10px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-        }
+.gridone {
+    margin-top: 6vh;
+    width: 90%;
+  align-items: center; 
+  /* border: 3px solid yellow; */
+  font-family: cursive;
+  text-transform: capitalize;
+}
+.gridone p{
+   padding-top:9vh;
+   padding-bottom: 8vh;
+}
 
-        .about-section h1 {
-            text-align: center;
-            color: #333;
-        }
+.gridtwo {
+  /* border: 3px solid yellow; */
+  display: flex;
+  justify-content: center;
+  gap: 22px;
+}
 
-        .about-section p {
-            margin: 20px 0;
-            color: #555;
-            text-align: center;
-        }
 
-        .gallery {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 15px;
-            margin-top: 30px;
-        }
+.imgone {
+  width: 40%;
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  gap: 10px;
+}
 
-        .gallery img {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-            border-radius: 10px;
-            transition: transform 0.3s, box-shadow 0.3s;
-            cursor: pointer;
-        }
+.imgone img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
 
-        .gallery img:hover {
-            transform: scale(1.05);
-            box-shadow: 0 8px 20px rgba(0,0,0,0.3);
-        }
 
-        .tour-blog a {
-            display: inline-block;
-            margin-top: 10px;
-            color: #007bff;
-            text-decoration: none;
-        }
-        .tour-blog a:hover {
-            text-decoration: underline;
-        }
+.imgall {
+  width: 55%;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  gap: 10px;
+}
 
-    </style>
+.imgall img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.story{
+    font-family: cursive;
+    font-size: x-large;
+    font-weight: bold;
+    color: rgb(6, 96, 96);
+}
+.tourblog a{
+   text-decoration: none;
+   color: white;
+border: 2px solid rgb(162, 102, 219);
+   border-radius: 10px;
+  
+}
+.but{
+          display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: orangered;
+    border: 2px solid snow;
+    border-radius: 8px;
+  height: 6.8vh;
+    width: 9vw;
+    color: white;
+    font-size: large;
+}
+.but:hover{
+    transform: scale(1.09);
+   }
+   footer {
+  background: linear-gradient(to right, blue, skyblue);
+  color:whitesmoke;
+  padding: 40px 20px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-about h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  color: yellow;
+}
+
+.footer-about p {
+  line-height: 1.6;
+  font-size: 14px;
+}
+
+.footer-links h3,
+.footer-contact h3,
+.footer-social h3 {
+  margin-bottom: 10px;
+  color:yellow;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links ul li {
+  margin: 6px 0;
+}
+
+.footer-links ul li a {
+  text-decoration: none;
+  color:whitesmoke;
+  transition: 0.3s;
+}
+
+.footer-links ul li a:hover {
+  color: yellow;
+}
+
+.footer-contact p {
+  margin: 6px 0;
+}
+
+.footer-social a {
+  font-size: 22px;
+  margin: 0 8px;
+  text-decoration: none;
+  color:white;
+  transition: 0.3s;
+}
+
+.footer-social a:hover {
+  color: yellow;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  padding-top: 10px;
+  border-top: 1px solid rgba(255,255,255,0.2);
+  font-size: 14px;
+}
+
+
+  </style>
 </head>
 <body>
 
-    <div class="about-section">
-        <h1>About Us</h1>
-        <p>Welcome to <strong>GlobeQuest Travels</strong>! We make your travel dreams come true. Explore our tours, destinations, and experiences in this gallery.</p>
+  <div class="conatainer">
+    <h1>About Us</h1>
+    <p>
+      Welcome to <strong>GlobeQuest Travels</strong>! We make your travel dreams come true. 
+      Explore our tours, destinations, and experiences in this gallery.
+    </p>
 
-        <div class="gallery">
-            <img src="https://tse2.mm.bing.net/th/id/OIP.6tJFpwVuTqv3RtaqTdoTrQHaEK?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Mountain">
-            <img src="https://tse2.mm.bing.net/th/id/OIP.6tJFpwVuTqv3RtaqTdoTrQHaEK?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Beach">
-            <img src="https://tse2.mm.bing.net/th/id/OIP.6tJFpwVuTqv3RtaqTdoTrQHaEK?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="City">
-            <img src="https://tse2.mm.bing.net/th/id/OIP.6tJFpwVuTqv3RtaqTdoTrQHaEK?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Forest">
-            <img src="https://tse2.mm.bing.net/th/id/OIP.6tJFpwVuTqv3RtaqTdoTrQHaEK?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Desert">
-            <img src="https://tse2.mm.bing.net/th/id/OIP.6tJFpwVuTqv3RtaqTdoTrQHaEK?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Travel">
-            <img src="https://tse2.mm.bing.net/th/id/OIP.6tJFpwVuTqv3RtaqTdoTrQHaEK?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Lake">
-            <img src="https://tse2.mm.bing.net/th/id/OIP.6tJFpwVuTqv3RtaqTdoTrQHaEK?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Adventure">
-        </div>
-
-        <div class="tour-blog">
-            <h2>Explore More Tours</h2>
-            <a href="blog.html" target="_blank">Visit Our Travel Blog</a>
-        </div>
+    <div class="gallery">
+      <img src="https://tse2.mm.bing.net/th/id/OIP.6tJFpwVuTqv3RtaqTdoTrQHaEK?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Mountain">
+      <div class="story">“Adventure awaits beyond your comfort zone,
+so take the first step and explore.”</div>
+      <img src="https://www.esamskriti.com/essays/docfile/42_5117.jpg" alt="Beach">
+      <img src="https://tse4.mm.bing.net/th/id/OIP.ztAkP_NTznklwkiiRf_eoQHaEo?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="City">
+      <img src="https://tse4.mm.bing.net/th/id/OIP.Xn9064Jrt_wUOulEcgddSgHaE4?r=0&pid=ImgDet&w=474&h=312&rs=1&o=7&rm=3" alt="Forest">
+      <img src="https://tse1.mm.bing.net/th/id/OIP.nt9CmiPJR-Co2PUoATzFJQHaEK?r=0&w=2560&h=1440&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Desert">
     </div>
 
+    <div class="tourblog">
+      <h2>Explore More Tours</h2>
+      <a  class="but" href="#explore" target="_blank">Visit Our Blog</a>
+    </div>
+  </div>
+<div class="blog"  id="explore">
+  <div class="gridone">
+    <h1>our blogs</h1>
+    <p>Lorem ipsum dolor Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis voluptates esse magnam inventore dicta repellat atque eligendi! Repellendus ex neque itaque maiores nobis voluptate quas quam! Ea cupiditate veniam aperiam? sit amet consectetur adipisicing elit. Natus commodi doloribus consequuntur explicabo dolorem minus rerum, fuga expedita facere voluptatum, nobis ex incidunt temporibus voluptas ad quisquam in assumenda reprehenderit.</p>
+    <div class="but">read more....</div>  
+</div>
+
+  <div class="gridtwo">
+    <div class="imgone">
+         <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e" alt="">
+        
+    </div>
+
+    <div class="imgall">
+      <img src="https://th.bing.com/th/id/R.56ab5704680b6574c1b3c0a52643d8b5?rik=P8OAzrJEZS%2biuw&riu=http%3a%2f%2fjourneyz.co%2fwp-content%2fuploads%2f2019%2f09%2fGolden-Gate-Bridge.jpg&ehk=WX9eb2rUUjWBLLrsG2MQZLOMk2wtreV%2bT1Qq1tARk4s%3d&risl=&pid=ImgRaw&r=0" alt="">
+      <img src="https://images.unsplash.com/photo-1493558103817-58b2924bce98" alt="">
+   </div>
+  </div>
+</div>
+<footer>
+  <div class="footer-container">
+    <div class="footer-about">
+      <h2>GlobeQuest</h2>
+      <p>Explore the world with us! Discover breathtaking destinations, hidden gems, and unforgettable experiences tailored just for you.</p>
+    </div>
+
+    <div class="footer-links">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Destinations</a></li>
+        <li><a href="#">Blogs</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-contact">
+      <h3>Contact Us</h3>
+      <p><span>📍</span> New Delhi, India</p>
+      <p><span>📞</span> +91 98765 43210</p>
+      <p><span>✉️</span> info@globequest.com</p>
+    </div>
+
+    <div class="footer-social">
+      <h3>Follow Us</h3>
+      <a href="#">🌍</a>
+      <a href="#">📸</a>
+      <a href="#">🐦</a>
+      <a href="#">📘</a>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2025 GlobeQuest. All Rights Reserved.</p>
+  </div>
+</footer>
 </body>
 </html>
